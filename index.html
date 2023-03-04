@@ -1,3 +1,193 @@
-<h1> James Hillman </h1>
-<h2> The Website <h2>
-<h6> Not to be confused with the movie <h3>
+<head>
+    <style>
+    .showHide {
+        display: inline-block;
+    }
+
+    .hideShow{
+        display: none !important;
+    }
+
+    @media screen and (max-width: 800px) {
+        .showHide {
+            display: none !important;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .hideShow{
+            display: inline-block !important;
+        }
+    }
+
+    a:link { text-decoration: none; }
+
+
+    a:visited { text-decoration: none; }
+
+
+    a:hover { text-decoration: none; }
+
+
+    a:active { text-decoration: none; }
+
+    .backgroundDiv{ 
+        background: url("GGJ2023.jpeg") no-repeat;
+        background-size: cover;
+    } 
+
+    .textBox {
+        background-color:rgba(255,255,255,.9);
+        width: 80%;
+        padding: 50px;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Albert+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tilt+Neon">
+</head>
+<body style="margin: 0; font-family: 'Albert Sans', sans-serif;">
+<div class="showHide" style="position: relative; height: 100%; background-color: white; display: flex; justify-content: space-between; gap:20px;">
+    <img style="width:50%; display: inline-block; margin-top: auto; object-fit: contain;" src="me_outline_1000.png" alt="Picture of Me">
+    <div style=" color: #7c5ccd; font-family:'Tilt Neon'; margin-top: auto; margin-bottom: auto; margin-right: 50px;">
+        <h1 style="font-size:10vw;">Software Engineer</h1>
+        <h1 style="font-size:5vw"> C++ Developer</h1>
+    </div>
+</div>
+
+<div class="hideShow" style="background-color: white; align-content: center;">
+    <div style="color: #7c5ccd; font-family:'Tilt Neon'; margin-top: 150px; text-align: center;">
+        <h1 style="font-size:10vw;">Software Engineer</h1>
+        <h1 style="font-size:5vw;">C++ Developer</h1>
+    </div>
+    <img class="hideShow" style="width:100%; margin-top: auto; object-fit: contain;" src="me_outline_1000.png" alt="Picture of Me">
+</div>
+
+<div class="showHide" style="padding: 5%; display:flex; gap: 5%;">
+    <div>
+        <h1 style="color: #7c5ccd; font-size: 60px;"> Hello there!</h1>
+        <h2> My name is James Hillman and I'm a Software Engineer!</h2>
+        <h2> I graduated from the University of Cincinnati in 2019 with a Bachelor of Science in Computer Science.</h2>
+        <h2> Throughout college I co-oped (interned) for several engineering companies, including GE Transportation and Siemens.</h2>
+    </div>
+    <div style="display:inline-block; margin-top: auto; margin-bottom: auto;">
+        <img style="width:100%; border-radius: 20px; box-shadow: 20px 20px #7c5ccd; object-fit: contain;" src="Capstone.jpeg" alt="Picture of Game Jam">
+    </div>
+</div>
+
+<div class="hideShow">
+    <div  style="padding: 20px;">
+        <h1 style="color: #7c5ccd; font-size: 60px;"> Hello there!</h1>
+        <h2> My name is James Hillman and I'm a Software Engineer!</h2>
+        <h2> I graduated from the University of Cincinnati in 2019 with a Bachelor of Science in Computer Science.</h2>
+        <h2> Throughout college I co-oped (interned) for several engineering companies, including GE Transportation and Siemens.</h2>
+    </div>
+    <img style="border-radius: 20px; width:90%; margin-left: auto; margin-right: auto; display: block; box-shadow: 20px 20px #7c5ccd; object-fit: contain;" src="Capstone.jpeg" alt="Picture of Game Jam">
+</div>
+
+
+<div class="showHide" style="padding: 5%;display:flex; gap: 5%;">
+    <div style="display:inline-block; margin-top: auto; margin-bottom: auto;">
+        <img style="width:100%; height: auto; object-fit: contain;" src="companies_cropped.png" alt="Picture of Game Jam">
+    </div>
+    <div>
+        <h1 style="color: #7c5ccd; font-size: 60px;"> Work Experience </h1>
+        <h2> My most recent work experience was as a Software Engineer for Siemens Digital Industries.</h2>
+        <h2> I joined Siemens full time right after graduation, and spent 3+ years as a Shape Modeling engineer for their CAD software NX.</h2>
+        <h2> During my tenure I developed and maintained Shape Modeling features for several NX product releases. Through my extensive work with CAD tools I gained valuable experience navigating the complex nature of large software development. In particular I learned much about 3D modeling. </h2>
+        <h2> It was here I realized the importance of taking ownership of every step in a product's lifecycle. Thanks to Siemens I can design extensible, scalable software and have had plenty of practice providing excellent support through maintenance and enhancements. </h2>
+    </div>
+</div>
+
+<div class="hideShow">
+    <div  style="padding: 20px;">
+        <h1 style="color: #7c5ccd; font-size: 60px;"> Work Experience </h1>
+        <h2> My most recent work experience was as a Software Engineer for Siemens Digital Industries.</h2>
+        <h2> I joined Siemens full time right after graduation, and spent 3+ years as a engineer for their CAD software NX.</h2>
+        <h2> During my tenure I developed and maintained Shape Modeling features for several NX product releases. Through my extensive work with CAD tools I gained valuable experience navigating the complex nature of large software development. In particular I learned much about 3D modeling. </h2>
+        <h2> It was here I realized the importance of taking ownership of every step in a product's lifecycle. Thanks to Siemens I can design extensible, scalable software and have had plenty of practice providing excellent support through maintenance and enhancements. </h2>
+    </div>
+    <img style="border-radius: 20px; width:90%; margin-left: auto; margin-right: auto; display: block; object-fit: contain;" src="companies_cropped.png" alt="Picture of GE and Siemens Logos">
+</div>
+
+<div class="showHide" style="padding: 5%; display:flex; gap: 5%;">
+    <div>
+        <h1 style="color: #7c5ccd; font-size: 60px;"> Personal Coding </h1>
+        <h2> When not coding for work, I code for pleasure!</h2>
+        <h2> I love going to to game jams and working with like minded people to create interesting interactive projects.</h2>
+        <h2> In my spare time I experiment with Unreal and atempt to re-create game design structures using Raylib, a bare bone game graphics library.</h2>
+    </div>
+    <div style="display:inline-block; margin-top: auto; margin-bottom: auto;">
+        <img style="border-radius: 20px; width:100%; box-shadow: 20px 20px #7c5ccd; object-fit: contain;" src="GGJ2023.jpeg" alt="Picture of Game Jam">
+    </div>
+</div>
+
+<div class="hideShow">
+    <div style="padding: 20px;">
+        <h1 style="color: #7c5ccd; font-size: 60px;"> Personal Coding </h1>
+        <h2> When not coding for work, I code for pleasure!</h2>
+        <h2> I love going to to game jams and working with like minded people to create interesting interactive projects.</h2>
+        <h2> In my spare time I experiment with Unreal and atempt to re-create game design structures using Raylib, a bare bone game graphics library.</h2>
+    </div>
+    <img style="border-radius: 20px; width:90%; margin-left: auto; margin-right: auto; display: block; box-shadow: 20px 20px #7c5ccd; object-fit: contain;" src="GGJ2023.jpeg" alt="Picture of Game Jam">
+</div>
+
+<div class="showHide" style="padding: 5%; display:flex; gap: 5%;">
+    <div>
+        <h1 style="color: #7c5ccd; font-size:60px;"> Contact Information </h1>
+        <h2> I am always on the lookout for new people with whom to share my craft!</h2>
+        <h2> Whether you'd like to chat about some interesting code or talk opportunites, I'm constantly checking for messages.</h2>
+        <h2> Feel free to send me a shout via email or reach out on Linked-in.</h2> 
+        <h2> I'd also love it if while purusing my GitHub you found a problem and decided to submit a pull request! I can't learn from my mistakes unless I know they exist! :)</h2>
+    </div>
+    <div style="display:inline-block; margin-top: auto; margin-bottom: auto;">
+        <h1 style="font-size:40px; color: #7c5ccd;"> james.edw.hillman@gmail.com </h1>
+        <a href="https://github.com/Tesnich/">
+            <svg style="display: inline-block; margin-right: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30%"><path fill="#7c5ccd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/james-hillman-59a071110/">
+            <svg style="display: inline-block; margin-right: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#7c5ccd" width="30%" focusable="false">
+                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div class="hideShow">
+    <div style="padding: 20px;">
+        <h1 style="color: #7c5ccd; font-size:60px;"> Contact Information </h1>
+        <h2> I am always on the lookout for new people with whom to share my craft!</h2>
+        <h2> Whether you'd like to chat about some interesting code or talk opportunites, I'm constantly checking for messages.</h2>
+        <h2> Feel free to send me a shout via email or reach out on Linked-in.</h2> 
+        <h2> I'd also love it if while purusing my GitHub you found a problem and decided to submit a pull request! I can't learn from my mistakes unless I know they exist! :)</h2>
+    </div>
+    <div style="padding: 20px;">
+        <h1 style="font-size:40px; color: #7c5ccd;"> james.edw.hillman@gmail.com </h1>
+        <a href="https://github.com/Tesnich/">
+            <svg style="display: inline-block; margin-right: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30%"><path fill="#7c5ccd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/james-hillman-59a071110/">
+            <svg style="display: inline-block; margin-right: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#7c5ccd" width="30%" focusable="false">
+                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div style="background-color: black; position: fixed; top: 0; width: 100%; color: azure; display: flex; justify-content: space-between; gap:20px;">
+        <h1 style="display: inline-block; margin-left: 50px; font-size: 40px; font-family:'Tilt Neon', sans-serif;"> James Hillman<h1>
+        <a href="https://github.com/Tesnich/">
+            <svg style="display: inline-block; margin-right: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="50"><path fill="azure" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/james-hillman-59a071110/">
+            <svg style="display: inline-block; margin-right: 50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="azure"width="50" height="50" focusable="false">
+                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+            </svg>
+        </a>
+</div>
+
+</div>
+</body>
