@@ -238,18 +238,19 @@
       })
       .catch(error => console.error(error));
 
-    const target = document.querySelector('#splashdiv');
+    function updateSplashAlpha(){
+        const target = document.querySelector('#splashdiv');
+        var scrollPosition = window.scrollY;
+        var windowHeight = window.innerHeight;
+        var opacity;
+        target.style.opacity = (scrollPosition / windowHeight)*1.3;
+    }
+
     window.addEventListener('scroll', function() {
-      var scrollPosition = window.scrollY;
-      var windowHeight = window.innerHeight;
-      var opacity;
-
-      if (scrollPosition < windowHeight && scrollPosition != 0) {
-        opacity = (scrollPosition / windowHeight)*1.3;
-      }
-
-      target.style.opacity = opacity;
+        updateSplashAlpha();
     });
+
+    updateSplashAlpha();
 
   </script>
 </body>
