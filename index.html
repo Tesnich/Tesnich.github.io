@@ -29,6 +29,16 @@
         }
     }
 
+    .splashImg {
+        width: 50%;
+    }
+
+    @-moz-document url-prefix() {
+      .splashImg {
+        width: 100%;
+      }
+    }
+
     a:link { text-decoration: none; }
 
 
@@ -62,7 +72,7 @@
 <body style="margin: 0; font-family: 'Albert Sans', sans-serif;">
     
 <div class="showHide" style="position: fixed; z-index: -2; height: 100%; background-color: white; display: flex; justify-content: space-between; gap:20px;">
-    <img style="width:50%; display: inline-block; margin-top: auto; object-fit: contain;" src="me_outline_1000.png" alt="Picture of Me">
+    <img class="splashImg" style="display: inline-block; margin-top: auto; object-fit: contain;" src="me_outline_1000.png" alt="Picture of Me">
     <div style=" color: #7c5ccd; font-family:'Tilt Neon'; margin-top: auto; margin-bottom: auto; margin-right: 50px;">
         <h1 style="font-size:10vw;">Software Engineer</h1>
         <h1 style="font-size:5vw"> C++ Developer</h1>
@@ -80,7 +90,7 @@
     <img class="hideShow" style="width:100%; margin-top: auto; object-fit: contain;" src="me_outline_1000.png" alt="Picture of Me">
 </div>
 
-<div class="showHide" style="padding: 5%; display:flex; gap: 5%;">
+<div class="showHide" style="padding: 5%; display:flex; gap: 5%; padding-bottom: 0;">
     <div>
         <h1 style="color: #7c5ccd; font-size: 60px;"> Hello there!</h1>
         <h2> My name is James Hillman and I'm a Software Engineer!</h2>
@@ -103,7 +113,7 @@
 </div>
 
 
-<div class="showHide" style="padding: 5%;display:flex; gap: 5%;">
+<div class="showHide" style="padding: 5%;display:flex; gap: 5%; padding-bottom: 0;">
     <div style="display:inline-block; margin-top: auto; margin-bottom: auto;">
         <img style="width:100%; height: auto; object-fit: contain;" src="companies_cropped.png" alt="Picture of Game Jam">
     </div>
@@ -127,7 +137,7 @@
     <img style="border-radius: 20px; width:90%; margin-left: auto; margin-right: auto; display: block; object-fit: contain;" src="companies_cropped.png" alt="Picture of GE and Siemens Logos">
 </div>
 
-<div class="showHide" style="padding: 5%; display:flex; gap: 5%;">
+<div class="showHide" style="padding: 5%; display:flex; gap: 5%; padding-bottom: 0;">
     <div>
         <h1 style="color: #7c5ccd; font-size: 60px;"> Personal Coding </h1>
         <h2> When not coding for work, I code for pleasure!</h2>
