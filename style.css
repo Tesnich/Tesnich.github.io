@@ -1,6 +1,7 @@
 #repos-container {
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
     width: 100%;
     height: 200px;
   }
