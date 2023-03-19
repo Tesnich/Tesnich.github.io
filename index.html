@@ -230,7 +230,7 @@
     const target = document.querySelector('#splashdiv');
     window.addEventListener('scroll', () => {
       const scrollPos = window.scrollY;
-      const blurAmt = scrollPos / 4; // adjust this value to control blur intensity
+      const blurAmt = scrollPos / .7; // adjust this value to control blur intensity
       target.style.filter = `blur(${blurAmt}px)`;
     });
   </script>
