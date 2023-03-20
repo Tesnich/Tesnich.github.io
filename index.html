@@ -139,10 +139,10 @@
 
 <div class="showHide" style="padding: 5%; display:flex; gap: 5%; padding-bottom: 0;">
     <div>
-        <h1 style="color: #7c5ccd; font-size: 60px;"> Personal Coding </h1>
+        <h1 style="color: #7c5ccd; font-size: 60px;"> Personal Life </h1>
         <h2> When not coding for work, I code for pleasure!</h2>
         <h2> I love going to game jams and working with like minded people to create interesting interactive projects.</h2>
-        <h2> In my spare time I experiment with Unreal and attempt to re-create game design structures using Raylib, a bare bone game graphics library.</h2>
+        <h2> In my spare time I experiment with Unreal and attempt to re-create game design structures using Raylib, a bare bones game graphics library.</h2>
     </div>
     <div style="display:inline-block; margin-top: auto; margin-bottom: auto;">
         <img style="border-radius: 20px; width:100%; box-shadow: 20px 20px #7c5ccd; object-fit: contain;" src="GGJ2023.jpeg" alt="Picture of Game Jam">
@@ -151,12 +151,30 @@
 
 <div class="hideShow">
     <div style="padding: 20px;">
-        <h1 style="color: #7c5ccd; font-size: 60px;"> Personal Coding </h1>
+        <h1 style="color: #7c5ccd; font-size: 60px;"> Personal Life </h1>
         <h2> When not coding for work, I code for pleasure!</h2>
         <h2> I love going to game jams and working with like minded people to create interesting interactive projects.</h2>
-        <h2> In my spare time I experiment with Unreal and attempt to re-create game design structures using Raylib, a bare bone game graphics library.</h2>
+        <h2> In my spare time I experiment with Unreal and attempt to re-create game design structures using Raylib, a bare bones game graphics library.</h2>
     </div>
     <img style="border-radius: 20px; width:90%; margin-left: auto; margin-right: auto; display: block; box-shadow: 20px 20px #7c5ccd; object-fit: contain;" src="GGJ2023.jpeg" alt="Picture of Game Jam">
+</div>
+
+<div class="showHide" style="padding: 5%; display:flex; gap: 5%; padding-bottom: 0;">
+    <div style="display:inline-block;">
+        <img style="border-radius: 20px; margin-top: auto; margin-bottom: auto; box-shadow: 20px 20px #7c5ccd; object-fit: contain; width: 50vw" src="DroneFootage.gif" >
+    </div>
+    <div style="display:inline-block; ">
+        <h2> When I don't feel like coding you'll find me honing my skills as an FPV drone pilot in DRL Sim. </h2>
+        <h2> I have a TRUST recreational flight certificate and fly a Cetus X irl when I can find the time. There is quite a steep learning curve with the hobby, but if you can dedicate yourself to learning the basics flying FPV drones becomes a blast!</h2>
+    </div>
+</div>
+
+<div class="hideShow">
+    <div style="padding: 20px;">
+        <h2> When I don't feel like coding you'll find me honing my skills as an FPV drone pilot in DRL Sim. </h2>
+        <h2> I have a TRUST recreational flight certificate and fly a Cetus X irl when I can find the time. There is quite a steep learning curve with the hobby, but if you can dedicate yourself to learning the basics flying FPV drones becomes a blast!</h2>
+    </div>
+    <img style="display: block; border-radius: 20px; margin-left: auto; margin-right:auto; box-shadow: 20px 20px #7c5ccd; object-fit: contain; width: 90vw;" src="DroneFootage.gif" >
 </div>
 
 <div class="showHide" style="padding: 5%; display:flex; gap: 5%;">
@@ -236,7 +254,17 @@
           container.appendChild(card);
         });
       })
-      .catch(error => console.error(error));
+      .catch(error => {
+        const card = document.createElement('div');
+          card.classList.add('repo-card');
+          card.innerHTML = `
+            <h3>Error</h3>
+            <p> There was some sort of issue fetching from GitHub...</p>
+            <p>${error}</p>
+            <svg style="display: inline-block; margin-right: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30%"><path fill="#7c5ccd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+          `;
+          container.appendChild(card);
+      });
 
     function updateSplashAlpha(){
         const target = document.querySelector('#splashdiv');
